@@ -4,33 +4,43 @@
 		<title>Ballistic Calculator</title>
 		<link rel= "stylesheet" href= "calci.css">
 		<script src="cal.js"></script>
-		<script src="jquery.js"></script>
+		<script src="jquery-1.11.2.js"></script>
 		
-	</head
+	</head>
 	<body>
+	
 		<div class="calculator">
-			<input  id="screen" type="text" disabled></input><br>
+			<input id="screen" type="text" readonly ></input><br>
+			
 			<strong>Ballistic Calculator</strong>
 			<hr>
 			<div class="Wrapbutton">
-				<input type="button" class="buttons" value="7"onclick="digPress(7)"></input>
-				<input type="button" class="buttons" value="8"onclick="digPress(8)"></input>
-				<input type="button" class="buttons" value="9"onclick="digPress(9)"></input>
-				<input type="button" class="operators" value="+" onclick="opPress()" ></input><br><br><br>
-				<input type="button" class="buttons" value="4" onclick="digPress(4)"></input>
-				<input type="button" class="buttons" value="5" onclick="digPress(5)"></input>
-				<input type="button" class="buttons" value="6" onclick="digPress(6)"></input>
-				<input type="button" class="operators" value="-" onclick="opPress()" ></input><br><br><br>
-				<input type="button" class="buttons" value="1" onclick="digPress(1)"></input>	
-				<input type="button" class="buttons" value="2" onclick="digPress(2)"></input>	
-				<input type="button" class="buttons" value="3" onclick="digPress(3)"></input>	
-				<input type="button" class="operators" value="*" onclick="opPress()"></input><br><br><br>
-				<input type="button" class="buttons" value="0" onclick="digPress(0)"></input>
-				<input type="button" class="buttons" value="+" onclick="getEval()"></input>
-				<input type="button" class="buttons" value="." onclick="digPress(.)"></input>
-				<input type="button" class="operators" value="/" onclick="opPress()" ></input><br><br><br>
-	
+				<input type="button" class="clr" value="CLR""></input><br><br>
+				<input type="button" class="numbers" value="7"></input>
+				<input type="button" class="numbers" value="8"></input>
+				<input type="button" class="numbers" value="9"></input><br><br><br>
+				<input type="button" class="numbers" value="4"></input>
+				<input type="button" class="numbers" value="5"></input>
+				<input type="button" class="numbers" value="6"></input><br><br><br>
+				<input type="button" class="numbers" value="1"></input>	
+				<input type="button" class="numbers" value="2"></input>	
+				<input type="button" class="numbers" value="3"></input>	<br><br><br>
+				<input type="button" class="numbers" value="0"></input>
+				<input type="button" class="numbers" id="decimal" value="."></input>
+				<input type="button" class="numbers" value="00"></input><br><br><br>
+				</div>
+			<div class="Wrapoperators">
+				<input type="button" class="operators" value="+" ></input><br><br>
+				<input type="button" class="operators" value="-"></input><br><br>
+				<input type="button" class="operators" value="*"></input><br><br>
+				<input type="button" class="operators" value="/" ></input><br><br>
+				<input type="button" class="operators" id="evaluate" value="="></input><br><br>
 			</div>
-		</div>
+			
+	</div>
+	<input class="history" type="text" ></input>
+<script src="cal.js"></script>			
+		
+		
 		</body>
 </html>

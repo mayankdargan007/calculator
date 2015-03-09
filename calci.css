@@ -1,8 +1,9 @@
 .calculator{
 	background:#A4A4A4;
 	width:400px;
-	height:450px;
-	margin:auto;
+	height:460px;
+	margin-left:500px;
+	float:left;
 			}
 	
 #screen {
@@ -14,24 +15,46 @@
 	border-width:2px;
 	border-color:black;
 	text-align:right;
+	
 }
 .Wrapbutton{
 	margin-left:15px;
-	margin-top:40px;
+	margin-top:20px;
+	float:left;
 		}
 	
-.operators{
-margin-left:150px;
-width:50px;
-height:40px;
+.Wrapoperators{
+margin-top:62px;
+margin-right:30px;
+float:right;
 			}
-.buttons{
+.numbers{
 width:50px;
 height:40px;
-font-family:..\digital-7.ttf;
+border-color:black;
 }
 
-.buttons:hover, .operators:hover{
+.numbers:hover, .operators:hover,.clr:hover{
 cursor:pointer;
 background:#CCFF99;
 }	
+.operators{
+width:50px;
+height:40px;
+border-color:black;
+}
+.clr{
+width:50px;
+height:30px;
+}
+
+
+.history{
+margin-right:415px;
+border-style:hidden;
+color:#003366;
+font-size:25px;
+width:30px;
+float:right;
+
+}
