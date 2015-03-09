@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ballistic Calculator</title>
+		<link rel= "stylesheet" href= "calci.css">
+		<script src="cal.js"></script>
+		<script src="jquery.js"></script>
+		
+	</head
+	<body>
+		<div class="calculator">
+			<input  id="screen" type="text" disabled></input><br>
+			<strong>Ballistic Calculator</strong>
+			<hr>
+			<div class="Wrapbutton">
+				<input type="button" class="buttons" value="7"onclick="digPress(7)"></input>
+				<input type="button" class="buttons" value="8"onclick="digPress(8)"></input>
+				<input type="button" class="buttons" value="9"onclick="digPress(9)"></input>
+				<input type="button" class="operators" value="+" onclick="opPress()" ></input><br><br><br>
+				<input type="button" class="buttons" value="4" onclick="digPress(4)"></input>
+				<input type="button" class="buttons" value="5" onclick="digPress(5)"></input>
+				<input type="button" class="buttons" value="6" onclick="digPress(6)"></input>
+				<input type="button" class="operators" value="-" onclick="opPress()" ></input><br><br><br>
+				<input type="button" class="buttons" value="1" onclick="digPress(1)"></input>	
+				<input type="button" class="buttons" value="2" onclick="digPress(2)"></input>	
+				<input type="button" class="buttons" value="3" onclick="digPress(3)"></input>	
+				<input type="button" class="operators" value="*" onclick="opPress()"></input><br><br><br>
+				<input type="button" class="buttons" value="0" onclick="digPress(0)"></input>
+				<input type="button" class="buttons" value="+" onclick="getEval()"></input>
+				<input type="button" class="buttons" value="." onclick="digPress(.)"></input>
+				<input type="button" class="operators" value="/" onclick="opPress()" ></input><br><br><br>
+	
+			</div>
+		</div>
+		</body>
+</html>
